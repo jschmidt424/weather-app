@@ -36,25 +36,23 @@ function HourlyForecastWidget({ data }) {
       : "";
 
   return (
-    <div>
-      <div className="widget">
-        <div className="day">{weather_date.day}</div>
-        <div className="time">{weather_date.time}</div>
-        <div className="icon-temp">
-          <div className="icon">
-            <WeatherIcon iconNumber={icon} summary={summary} />
-          </div>
-          <div className="temperature">{Math.round(temperature)} °F</div>
-          <div className="precipitation">
-            {Math.round(precipitation.total)} mm/h
-          </div>
-          <div className="wind">{Math.round(wind.speed)} mph</div>
-          <div
-            className="dir"
-            style={{ transform: `rotate(${-45 + wind.angle}deg)` }}
-          >
-            <i className="bi bi-send-fill"></i>
-          </div>
+    <div className="widget">
+      <div className="day">{weather_date.day}</div>
+      <div className="time">{weather_date.time}</div>
+      <div className="icon-temp">
+        <div className="icon">
+          <WeatherIcon iconNumber={icon} summary={summary} />
+        </div>
+        <div className="temperature">{Math.round(temperature)} °F</div>
+        <div className="precipitation">
+          {Math.round(precipitation.total)} mm/h
+        </div>
+        <div className="wind">{Math.round(wind.speed)} mph</div>
+        <div
+          className="dir"
+          style={{ transform: `rotate(${-45 + wind.angle}deg)` }}
+        >
+          <i className="bi bi-send-fill"></i>
         </div>
       </div>
     </div>
