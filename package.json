@@ -35,6 +35,7 @@
     ]
   },
   "devDependencies": {
+    "dotenv": "^16.4.7",
     "sass": "^1.83.1"
   }
 }

@@ -1,5 +1,5 @@
-import { createContext, useState, useEffect } from "react";
-import { DEFAULT_PLACE, MEASUREMENT_SYSTEMS, UNITS } from "../constants/index";
+import { createContext, useEffect, useState } from "react";
+import { DEFAULT_PLACE, MEASUREMENT_SYSTEMS, UNITS } from "../constants";
 import { getWeatherData } from "../api";
 
 const WeatherContext = createContext();

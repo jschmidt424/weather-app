@@ -1,4 +1,4 @@
-const { createContext, useEffect, useState } = require("react");
+const { createContext, useState, useEffect } = require("react");
 
 const ThemeContext = createContext();
 const THEME_KEY = "theme";

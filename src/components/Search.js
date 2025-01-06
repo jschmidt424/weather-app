@@ -1,7 +1,7 @@
-import "../styles/components/Search.scss";
-import { searchPlaces } from "../api";
 import { useContext, useState } from "react";
+import { searchPlaces } from "../api";
 import WeatherContext from "../context/weather.context";
+import "../styles/components/Search.scss";
 
 function Search() {
   const { setPlace } = useContext(WeatherContext);
@@ -31,8 +31,8 @@ function Search() {
         <div className="search-input">
           <input
             type="text"
-            placeholder="Search cities..."
             name="search-city"
+            placeholder="Search city ..."
             value={text}
             onChange={onSearch}
           />

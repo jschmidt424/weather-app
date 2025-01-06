@@ -1,12 +1,13 @@
 import { useContext, useState } from "react";
-import WeatherContext from "../context/weather.context";
 import ThemeContextContext from "../context/theme.context";
+import { MEASUREMENT_SYSTEMS } from "../constants";
 import "../styles/components/Settings.scss";
-import { MEASUREMENT_SYSTEMS } from "../constants/index";
+import WeatherContext from "../context/weather.context";
 
 function Settings() {
   const [openSettings, setOpenSettings] = useState(false);
-  const { dark, setDark, saveThemeToLocalStorage } = useContext(WeatherContext);
+  const { dark, setDark, saveThemeToLocalStorage } =
+    useContext(ThemeContextContext);
   const { measurementSystem, setMeasurementSystem } =
     useContext(WeatherContext);
 
@@ -40,7 +41,7 @@ function Settings() {
       </div>
       <div className={`settings-menu ${openSettings ? "open" : ""}`}>
         <div className="measurement-systems">
-          <h4>Measurement Systems: </h4>
+          <h4>Measurement Systems:</h4>
           <div className="systems">
             {Object.values(MEASUREMENT_SYSTEMS).map((system) => (
               <div
