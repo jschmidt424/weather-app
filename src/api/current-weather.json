@@ -1,0 +1,24 @@
+{
+  "lat": "42.73253N",
+  "lon": "84.55553W",
+  "elevation": 853,
+  "timezone": "America/Detroit",
+  "units": "us",
+  "current": {
+    "icon": "cloudy",
+    "icon_num": 6,
+    "summary": "Cloudy",
+    "temperature": 22.7,
+    "feels_like": 11.0,
+    "wind_chill": 9.2,
+    "dew_point": 13.7,
+    "wind": { "speed": 11.7, "gusts": 24.2, "angle": 16, "dir": "NNE" },
+    "precipitation": { "total": 0.0, "type": "none" },
+    "cloud_cover": 87,
+    "ozone": 364.33,
+    "pressure": 30.09,
+    "uv_index": 1.16,
+    "humidity": 67,
+    "visibility": 15.0
+  }
+}
